@@ -75,7 +75,7 @@ exports.login = async (req, res) => {
             }, 'rahasia', {
                 expiresIn: '1h'
             });
-
+            console.log("Token:", token);
             res.json({
                 token
             });
